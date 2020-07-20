@@ -9,17 +9,7 @@
   </head>
 
   <body>
-    <section class="game">
-      <div class="score">
-        <div class="player-score">
-          <h2>PLAYER</h2>
-          <p>0</p>
-        </div>
-        <div class="computer-score">
-          <h2>COMPUTER</h2>
-          <p>0</p>
-        </div>
-      </div>
+    <main class="game">
       <div class="intro">
         <h1>Rock Paper Scissors Lizard Spock</h1>
         <div class="rules">
@@ -38,6 +28,16 @@
         <button>Let's Play</button>
       </div>
       <div class="match fadeOut">
+        <div class="score">
+          <div class="player-score">
+            <h2>PLAYER</h2>
+            <p>0</p>
+          </div>
+          <div class="computer-score">
+            <h2>COMPUTER</h2>
+            <p>0</p>
+          </div>
+        </div>
         <h2 class="winner">Choose an option</h2>
         <div class="hands">
           <img class="player-hand" src="./assets/rock.png" alt="" />
@@ -51,7 +51,7 @@
           <button class="spock">SPOCK</button>
         </div>
       </div>
-    </section>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>

@@ -7,10 +7,12 @@ const game = () => {
     const playBtn = document.querySelector(".intro button");
     const introScreen = document.querySelector(".intro");
     const match = document.querySelector(".match");
+    const score = document.querySelector(".score");
 
     playBtn.addEventListener("click", () => {
       introScreen.classList.add("fadeOut");
       match.classList.add("fadeIn");
+      score.classList.add("fadeIn");
     });
   };
 

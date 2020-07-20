@@ -4,22 +4,36 @@
   background-color: #304352;
 }
 
-section {
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.game {
   font-family: monospace;
-  flex-wrap: wrap;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  align-content: space-around;
   text-align: center;
+  height: 100%;
 }
 
 .score {
   color: #d7d2cc;
   height: 15vh;
+  width: auto;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 5px;
+}
+
+.player-score,
+.computer-score {
+  margin: 0 30px;
 }
 
 .score h2 {
@@ -37,13 +51,21 @@ p {
 }
 
 .intro {
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-evenly;
   color: yellowgreen;
   transition: opacity 0.5s ease;
 }
 
 .intro h1 {
   font-size: 50px;
+  margin: 15px;
+}
+
+.rules {
+  margin: 30px;
 }
 
 .intro button,
@@ -52,7 +74,7 @@ p {
   width: 150px;
   height: 50px;
   background: none;
-  border: solid yellowgreen;
+  border: solid rgb(167, 172, 159);
   color: yellowgreen;
   font-size: 20px;
   border-radius: 5px;
@@ -61,7 +83,7 @@ p {
 
 .match {
   position: absolute;
-  top: 60%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: opacity 0.5s ease 0.5s;
